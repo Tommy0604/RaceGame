@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    "target": "ESNEXT",
+    "useDefineForClassFields": true,
+    "lib": ["ESNEXT", "DOM", "DOM.Iterable"],
+    "module": "ESNEXT",
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+
+    /* Bundler mode */
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx",
+    "sourceMap": false,
+    "declaration": false,
+    "incremental": true,
+    /* Linting */
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "forceConsistentCasingInFileNames": true,
+    "experimentalDecorators": true, // 启用对ES装饰器的实验性支持
+    "noFallthroughCasesInSwitch": true
+  },
+  "include": ["src"],
+  "exclude": ["node_modules", "build"], // *** 不进行类型检查的文件 ***
+  "references": [{ "path": "./tsconfig.node.json" }]
+}
